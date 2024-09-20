@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    user-select: none;
+}
+
+.container {
+    position: relative;
+}
+
+.warning {
+    position: absolute;
+    top: -70px;
+    left: 22%;
+    background-color: rgba(221, 21, 121, 1);
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    animation: myAnim 1s ease 0s infinite normal forwards;
+}
+
+.warning-inline {
+    position: absolute;
+    top: -35px;
+    left: 90px;
+    background-color: rgb(221, 21, 121);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.body-freeze {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    width: 250px;
+    height: 330px;
+    background-image: url('background.png');
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0.8;
+        transform: scale(0.2);
+    }
+
+    80% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2.2);
+    }
+}
+
+.btn-con {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+}
+
+.btn-con button {
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(95, 95, 95);
+    border-radius: 6px;
+    background-color: #232323;
+    color: rgb(95, 95, 95);
+    font-weight: 300;
+    transition: all .3s;
+}
+
+.btn-con button:hover {
+    border: 2px solid rgb(221, 21, 121);
+    color: rgb(221, 21, 121);
+}
+
+.text-welcome {
+    position: absolute;
+    top: 45px;
+    left: 75px;
+    color: #eee;
+    font-size: 22px;
+}
+
+.text-body {
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    color: #eee;
+    font-size: 12px;
+}
+
+.logo-img {
+    position: absolute;
+    top: 100px;
+    left: 23px;
+    width: 200px;
+    height: 100px;
+    background-image: url('logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
